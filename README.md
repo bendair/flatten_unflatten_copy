@@ -17,3 +17,18 @@ Exports a CSV mapping of token->original path, and shows a progress bar.
   ```
   python flatten_copy.py file.ext
   ```
+
+# Unflatten & Copy
+
+Unflatten flat files back to their original folder-file paths under a given root.
+Exports a CSV mapping of token->restored path, and shows a progress bar.
+
+## Usage:
+  ### Restore entire flat directory:
+  ```
+  python unflatten_copy.py flat_dir restore_root [-m mapping.csv]
+  ```
+  ### Restore a single file:
+  ```
+  python unflatten_copy.py flat_dir/TOKEN.ext restore_root [-m mapping.csv]
+  ```
